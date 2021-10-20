@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record model="ir.ui.view" id="num_verify_form">
+        <field name="name">num.verify.wizard</field>
+        <field name="model">num.verify</field>
+        <field name="arch" type="xml">
+            <form string="Verify">
+                <group>
+                    <field name="patient"/>
+                    <field name="mobile"/>
+                </group>
+                <footer>
+                    <button name="verify_phone" string="Verify" class="btn-primary" type="object" context="{'default_mobile':active_id}"/>
+                    <button string="Cancel" class="btn-secondary" special='cancel'/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="num_verify_wizard" model="ir.actions.act_window">
+        <field name="name">Verify Mobile</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">num.verify</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="num_verify_form"/>
+        <field name="target">new</field>
+    </record>
+
+
+</odoo>

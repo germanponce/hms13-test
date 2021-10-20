@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+        <template id="patient_page" name="Hospital Patient">
+            <t t-call="website.layout">
+                <div class="container">
+                    <t t-foreach="keys" t-as="pat">
+                        <t t-esc="pat.value"/>
+                    </t>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>
