@@ -26,7 +26,7 @@
                     </p>
                 </div>
             </field>
-            <field name="report_template" ref="report_patient_card"/>
+            <!-- <field name="report_template" ref="report_patient_card"/> -->
             <field name="report_name">
                 Patient_Card_${(object.name_seq or object.patient_name)}
             </field>
