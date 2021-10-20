@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Consultation Form View -->
+    <record id="sis_consultation_form_view" model="ir.ui.view">
+        <field name="name">Consultation Form View</field>
+        <field name="model">sis.consultation</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Consultations">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="partner_id"/>
+                        <field name="specialty"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Consultation Tree View -->
+    <record id="sis_consultation_tree_view" model="ir.ui.view">
+        <field name="name">Consultation Tree View</field>
+        <field name="model">sis.consultation</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Consultations">
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="specialty"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Consultation Actions Window -->
+    <record id="sis_consultation_action" model="ir.actions.act_window">
+        <field name="name">Consultation generals</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sis.consultation</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a general medical consultation!!!
+            </p>
+            <p>
+                Create a general consultation in a hospital, to keep track of them.
+            </p>
+        </field>
+    </record>
+
+    <!-- Consultation Menu -->
+    <!-- This Menu Item Must have a parent -->
+    <menuitem id="sis_menu_consultation" name="Consultation" parent="sis_menu" sequence="10"/>
+    <!-- This Menu Item will show at the 'sis_menu_consultation' parent
+         menu and using the 'sis_consultation_action' action. -->
+    <menuitem id="sis_menu_consultation_hospital" name="Consultation generals" parent="sis_menu_consultation"
+              action="sis_consultation_action" sequence="10"/>
+
+</odoo>

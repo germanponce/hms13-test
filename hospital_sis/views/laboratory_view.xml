@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Laboratory Form View -->
+    <record id="sis_laboratory_form_view" model="ir.ui.view">
+        <field name="name">Laboratory Form View</field>
+        <field name="model">sis.laboratory</field>
+        <field name="arch" type="xml">
+            <form string="Laboratory">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <field name="user_id"/>
+                    </group>
+                    <group>
+                        <field name="hospital_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Laboratory Tree View -->
+    <record id="sis_laboratory_tree_view" model="ir.ui.view">
+        <field name="name">Laboratory Tree View</field>
+        <field name="model">sis.laboratory</field>
+        <field name="arch" type="xml">
+            <tree string="Laboratory">
+                <field name="name"/>
+                <field name="user_id"/>
+                <field name="hospital_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Laboratory Action Window -->
+    <record id="sis_laboratory_action" model="ir.actions.act_window">
+        <field name="name">Laboratory</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sis.laboratory</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a Hospital's Laboratory!!!
+            </p>
+            <p>
+                Create a Hospital's Laboratory, for register a stock about the laboratories available at the hospital.
+            </p>
+        </field>
+    </record>
+
+    <!-- Laboratory Menu -->
+    <!-- This Menu Item will show at the 'sis_menu_manager' parent
+         menu and using the 'sis_laboratory_action' action. -->
+    <menuitem id="menu_sis_manager_laboratory" name="Laboratory" parent="sis_menu_manager"
+              action="sis_laboratory_action" sequence="10"/>
+
+</odoo>

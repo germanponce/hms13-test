@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Hospital Form View -->
+    <record id="sis_hospital_form_view" model="ir.ui.view">
+        <field name="name">Hospital Form View</field>
+        <field name="model">sis.hospital</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Hospital">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="country_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Hospital Tree View -->
+    <record id="sis_hospital_tree_view" model="ir.ui.view">
+        <field name="name">Hospital Tree View</field>
+        <field name="model">sis.hospital</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Hospital">
+                <field name="name"/>
+                <field name="country_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Hospital Actions Window -->
+    <record id="sis_hospital_action" model="ir.actions.act_window">
+        <field name="name">Hospital</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sis.hospital</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                <!-- Add Text Here -->
+                Create a Hospital!!!
+            </p>
+            <p>
+                <!-- More details about what a user can do with this object will be OK -->
+                Create a Hospital and linking the country where is the hospital, for register all internal operations.
+            </p>
+        </field>
+    </record>
+
+    <!-- Hospital menu -->
+    <!-- This Menu Item will appear in the Upper bar, That's why It needs NO parent or action -->
+    <menuitem id="sis_menu" name="Hospital" sequence="10"/>
+    <!-- This Menu Item Must have a parent -->
+    <menuitem id="sis_menu_manager" name="Manager" parent="sis_menu" sequence="10"/>
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="sis_menu_manager_hospital" name="Hospital" parent="sis_menu_manager"
+              action="sis_hospital_action" sequence="10"/>
+
+</odoo>
