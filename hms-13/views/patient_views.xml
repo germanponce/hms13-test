@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="action_patient" model="ir.actions.act_window">
+        <field name="name">Patients</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hospital.patient</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create new Patient!</p>
+        </field>
+    </record>
+
+
+    <record id="view_patient_form" model="ir.ui.view">
+        <field name="name">hospital.patient.form</field>
+        <field name="model">hospital.patient</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="birthdate"/>
+                            <field name="country_id"/>
+                        </group>
+                        <group>
+                            <field name="gender"/>
+                            <field name="mobile"/>
+                            <field name="age"/>
+                            <field name="verification"/>
+
+                        </group>
+                    </group>
+                    <footer>
+                        <button name="verify_num" string="Verify Mobile" class="btn-primary" type="object"
+                                context="{'default_patient': active_id}"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="patient_tree_view" model="ir.ui.view">
+        <field name="name">patient.tree.view</field>
+        <field name="model">hospital.patient</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="birthdate"/>
+                <field name="gender"/>
+                <field name="mobile"/>
+                <field name="verification"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_patient_search" model="ir.ui.view">
+        <field name="name">hospital.patient.search</field>
+        <field name="model">hospital.patient</field>
+        <field name="arch" type="xml">
+            <search string="Search Patients">
+                <field name="name"/>
+                <field name="gender"/>
+                <field name="mobile"/>
+                <field name="country_id"/>
+                <group expand="o" string="Group by">
+                    <filter string="Country" name="country_id" context="{'group_by': 'country_id'}"/>
+                    <filter string="Gender" name="gender" context="{'group_by': 'gender'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <menuitem id="patient_list" name="Patients" parent="appointment_root" action="action_patient"/>
+
+</odoo>
