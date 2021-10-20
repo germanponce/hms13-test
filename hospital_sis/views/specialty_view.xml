@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Specialties Form View -->
+    <record id="sis_specialties_form_view" model="ir.ui.view">
+        <field name="name">Specialties Form View</field>
+        <field name="model">sis.specialty</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Specialties">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Specialties Tree View -->
+    <record id="sis_specialties_tree_view" model="ir.ui.view">
+        <field name="name">Specialties Tree View</field>
+        <field name="model">sis.specialty</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Specialties">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Specialties actions window -->
+    <record id="sis_specialties_action" model="ir.actions.act_window">
+        <field name="name">Specialties</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sis.specialty</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a medical specialty!!!
+            </p>
+            <p>
+                Create a medical specialty associated with a hospital, to catalog the services offered in the hospital.
+            </p>
+        </field>
+    </record>
+
+    <!-- Specialties menu -->
+    <!-- This Menu Item will show at the 'sis_menu_manager' parent
+         menu and using the 'sis_specialties_action' action. -->
+    <menuitem id="menu_sis_manager_specialties" name="Specialties" parent="sis_menu_manager"
+              action="sis_specialties_action" sequence="10"/>
+
+</odoo>

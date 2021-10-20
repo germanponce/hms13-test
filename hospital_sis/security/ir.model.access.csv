@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sis_hospital,access.sis.hospital,model_sis_hospital,,1,1,1,1
+access_sis_specialty,access.sis.specialty,model_sis_specialty,,1,1,1,1
+access_sis_laboratory,access.sis.laboratory,hospital_sis.model_sis_laboratory,hospital_sis.group_hospital_laboratory,1,1,1,1
+access_sis_consultation,access.sis.consultation,model_sis_consultation,,1,1,1,1

@@ -1,0 +1,333 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hospital_sis
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-20 22:24+0000\n"
+"PO-Revision-Date: 2019-11-20 22:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hospital_sis
+#: model_terms:ir.ui.view,arch_db:hospital_sis.respartner_inherit_customs_fields
+msgid "00000000-0"
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.ui.view,arch_db:hospital_sis.respartner_inherit_customs_fields
+msgid "45"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_res_partner__age
+#: model:ir.model.fields,field_description:hospital_sis.field_res_users__age
+msgid "Age"
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.ui.view,arch_db:hospital_sis.respartner_inherit_customs_fields
+msgid "Age:"
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.ui.view,arch_db:hospital_sis.respartner_inherit_customs_fields
+msgid "Civil Engineer"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.ui.menu,name:hospital_sis.sis_menu_consultation
+msgid "Consultation"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.actions.act_window,name:hospital_sis.sis_consultation_action
+#: model:ir.ui.menu,name:hospital_sis.sis_menu_consultation_hospital
+msgid "Consultation generals"
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.ui.view,arch_db:hospital_sis.sis_consultation_form_view
+#: model_terms:ir.ui.view,arch_db:hospital_sis.sis_consultation_tree_view
+msgid "Consultations"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model,name:hospital_sis.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_hospital__country_id
+msgid "Country"
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.actions.act_window,help:hospital_sis.sis_hospital_action
+msgid ""
+"Create a Hospital and linking the country where is the hospital, for "
+"register all internal operations."
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.actions.act_window,help:hospital_sis.sis_hospital_action
+msgid "Create a Hospital!!!"
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.actions.act_window,help:hospital_sis.sis_laboratory_action
+msgid "Create a Hospital's Laboratory!!!"
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.actions.act_window,help:hospital_sis.sis_laboratory_action
+msgid ""
+"Create a Hospital's Laboratory, for register a stock about the laboratories "
+"available at the hospital."
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.actions.act_window,help:hospital_sis.sis_consultation_action
+msgid "Create a general consultation in a hospital, to keep track of them."
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.actions.act_window,help:hospital_sis.sis_consultation_action
+msgid "Create a general medical consultation!!!"
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.actions.act_window,help:hospital_sis.sis_specialties_action
+msgid ""
+"Create a medical specialty associated with a hospital, to catalog the "
+"services offered in the hospital."
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.actions.act_window,help:hospital_sis.sis_specialties_action
+msgid "Create a medical specialty!!!"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_consultation__create_uid
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_hospital__create_uid
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_laboratory__create_uid
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_specialty__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_consultation__create_date
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_hospital__create_date
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_laboratory__create_date
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_specialty__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_consultation__display_name
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_hospital__display_name
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_laboratory__display_name
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_specialty__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: hospital_sis
+#: model:res.groups,name:hospital_sis.group_hospital_doctor
+msgid "Doctor"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,help:hospital_sis.field_res_partner__age
+#: model:ir.model.fields,help:hospital_sis.field_res_users__age
+msgid "Enter the Age"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,help:hospital_sis.field_sis_hospital__name
+msgid "Enter the Hospital Name"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,help:hospital_sis.field_res_partner__profession
+#: model:ir.model.fields,help:hospital_sis.field_res_users__profession
+msgid "Enter the Profession"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,help:hospital_sis.field_res_partner__rut
+#: model:ir.model.fields,help:hospital_sis.field_res_users__rut
+msgid "Enter the RUT"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,help:hospital_sis.field_sis_specialty__name
+msgid "Enter the Specialty Name"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,help:hospital_sis.field_sis_consultation__name
+msgid "Enter the name"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.actions.act_window,name:hospital_sis.sis_hospital_action
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_laboratory__hospital_id
+#: model:ir.ui.menu,name:hospital_sis.sis_menu
+#: model:ir.ui.menu,name:hospital_sis.sis_menu_manager_hospital
+#: model_terms:ir.ui.view,arch_db:hospital_sis.sis_hospital_form_view
+#: model_terms:ir.ui.view,arch_db:hospital_sis.sis_hospital_tree_view
+msgid "Hospital"
+msgstr ""
+
+#. module: hospital_sis
+#: model:res.groups,name:hospital_sis.group_hospital_manager
+msgid "Hospital Administrator"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.module.category,description:hospital_sis.module_category_hospital
+msgid "Hospital Category"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model,name:hospital_sis.model_sis_consultation
+msgid "Hospital Consultations"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model,name:hospital_sis.model_sis_laboratory
+msgid "Hospital Laboratories"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_hospital__name
+msgid "Hospital Name"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model,name:hospital_sis.model_sis_specialty
+msgid "Hospital Specialties"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model,name:hospital_sis.model_sis_hospital
+msgid "Hospitals"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_consultation__id
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_hospital__id
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_laboratory__id
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_specialty__id
+msgid "ID"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.actions.act_window,name:hospital_sis.sis_laboratory_action
+#: model:ir.ui.menu,name:hospital_sis.menu_sis_manager_laboratory
+#: model_terms:ir.ui.view,arch_db:hospital_sis.sis_laboratory_form_view
+#: model_terms:ir.ui.view,arch_db:hospital_sis.sis_laboratory_tree_view
+msgid "Laboratory"
+msgstr ""
+
+#. module: hospital_sis
+#: model:res.groups,name:hospital_sis.group_hospital_laboratory
+msgid "Laboratory Assistant"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_laboratory__name
+msgid "Laboratory Name"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_consultation____last_update
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_hospital____last_update
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_laboratory____last_update
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_specialty____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_consultation__write_uid
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_hospital__write_uid
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_laboratory__write_uid
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_specialty__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_consultation__write_date
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_hospital__write_date
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_laboratory__write_date
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_specialty__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.ui.menu,name:hospital_sis.sis_menu_manager
+msgid "Manager"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.module.category,name:hospital_sis.module_category_hospital
+msgid "Manager Hospital"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_consultation__name
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_specialty__name
+msgid "Name"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_consultation__partner_id
+msgid "Patient"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_res_partner__profession
+#: model:ir.model.fields,field_description:hospital_sis.field_res_users__profession
+msgid "Profession"
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.ui.view,arch_db:hospital_sis.respartner_inherit_customs_fields
+msgid "Profession:"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_res_partner__rut
+#: model:ir.model.fields,field_description:hospital_sis.field_res_users__rut
+msgid "RUT"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_laboratory__user_id
+msgid "Responsible"
+msgstr ""
+
+#. module: hospital_sis
+#: model_terms:ir.ui.view,arch_db:hospital_sis.respartner_inherit_customs_fields
+msgid "Rut:"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.actions.act_window,name:hospital_sis.sis_specialties_action
+#: model:ir.ui.menu,name:hospital_sis.menu_sis_manager_specialties
+#: model_terms:ir.ui.view,arch_db:hospital_sis.sis_specialties_form_view
+#: model_terms:ir.ui.view,arch_db:hospital_sis.sis_specialties_tree_view
+msgid "Specialties"
+msgstr ""
+
+#. module: hospital_sis
+#: model:ir.model.fields,field_description:hospital_sis.field_sis_consultation__specialty
+msgid "Specialty"
+msgstr ""
